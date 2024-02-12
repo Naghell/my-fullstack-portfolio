@@ -65,8 +65,17 @@ export default function NavBar() {
                 className="w-full h-full text-white gap-8 flex justify-center items-center"
             >
                 {links.map((link, index) => (
-                    <Link href={link.ref} key={index}>
-                        <h1 className="transition hover:translate-y-1 cursor-pointer">{link.name}</h1>
+                    <Link className="flex justify-center relative" href={link.ref} key={index}>
+                        <motion.h1 
+                        className="transition-all pb-2 cursor-pointer relative"
+                        whileHover={{ 
+                            borderBottom: "1px solid white",
+                            transition: { duration: 0.3, ease: "easeOut" }
+                        }}
+                        initial={{ borderBottom: "1px solid transparent" }}
+                    >
+                        {link.name}
+                    </motion.h1>
                     </Link>
                 ))}
             </motion.div>
