@@ -26,6 +26,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-WYKMXRC9LK"></Script>
+      <Script>{`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-WYKMXRC9LK');`}
+      </Script>
+      </head>
       <body className={inter.className}>{children}</body>
       <Script id="ms-clarity" strategy="afterInteractive">
         {clairtyCode}
