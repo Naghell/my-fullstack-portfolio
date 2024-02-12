@@ -5,7 +5,13 @@ const config: Config = {
   theme: {
     colors: {
       black: "#02020A",
-      violet: "#613DC1",
+      violet: {
+        100: "#E6E0F8",
+        300: "#B497D6",
+        500: "#613DC1",
+        700: "#472B91",
+        900: "#311D61",
+      },
       pink: "#B497D6",
       beige: "#D9C5B2",
       white: "#E1E2EF",
