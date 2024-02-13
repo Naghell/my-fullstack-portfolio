@@ -12,11 +12,9 @@ export default function NavBar() {
         const currentScrollY = window.scrollY;
 
         if (currentScrollY < lastScrollY) {
-            // Scroll hacia arriba
             setIsVisible(true);
             if (hideTimer) clearTimeout(hideTimer);
         } else {
-            // Scroll hacia abajo
             if (hideTimer) clearTimeout(hideTimer);
             setIsVisible(false);
             hideTimer = setTimeout(() => {
@@ -38,7 +36,7 @@ export default function NavBar() {
 
     const links = [{
         name: 'Inicio',
-        ref: '/'
+        ref: '#home'
     },
     {
         name: 'Sobre mi',
@@ -65,7 +63,7 @@ export default function NavBar() {
                 className="w-full h-full text-white gap-8 flex justify-center items-center"
             >
                 {links.map((link, index) => (
-                    <Link className="flex justify-center relative" href={link.ref} key={index}>
+                    <Link className="flex justify-center relative" href={link.ref} key={index} scroll={true}>
                         <motion.h1 
                         className="transition-all pb-2 cursor-pointer relative"
                         whileHover={{ 

@@ -36,7 +36,7 @@ export default function RootLayout({
                 gtag('config', 'G-WYKMXRC9LK');`}
       </Script>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} scroll-smooth`}>{children}</body>
       <Script id="ms-clarity" strategy="afterInteractive">
         {clairtyCode}
       </Script>
