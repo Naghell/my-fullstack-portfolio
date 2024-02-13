@@ -40,7 +40,7 @@ const Header = () => {
 
     return(
     <section id="home" className="min-h-screen w-full flex justify-center items-center">
-        <div className="max-w-[1080px] w-full flex justify-between">
+        <div className="max-w-[1080px] w-full flex justify-between bg-">
             <div className="flex flex-col gap-4 w-full max-w-[360px]">
                 <h1 className="text-white font-bold text-6xl">Renzo Luis <br/>Battaglino</h1>
                 <h2 className="font-medium text-xl text-pink">Desarrollador web Full Stack</h2>

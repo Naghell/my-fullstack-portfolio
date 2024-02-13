@@ -19,7 +19,7 @@ export default function NavBar() {
             setIsVisible(false);
             hideTimer = setTimeout(() => {
                 setIsVisible(true);
-            }, 1000);
+            }, 500);
         }
 
         lastScrollY = currentScrollY;
@@ -56,11 +56,11 @@ export default function NavBar() {
     }];
 
     return (
-        <nav className="w-full flex justify-center items-center py-6 fixed">
+        <nav className={`z-50 w-full flex justify-center items-center py-6 fixed`}>
             <motion.div
                 initial={{ y: -100 }}
                 animate={{ y: isVisible ? 0 : -100 }}
-                className="w-full h-full text-white gap-8 flex justify-center items-center"
+                className="z-50 w-full h-full text-white gap-8 flex justify-center items-center"
             >
                 {links.map((link, index) => (
                     <Link className="flex justify-center relative" href={link.ref} key={index}>
@@ -77,6 +77,9 @@ export default function NavBar() {
                     </Link>
                 ))}
             </motion.div>
+            <motion.div
+                initial={{ y: -100 }}
+                animate={{ y: isVisible ? 0 : -100 }} className="z-40 -top-8 w-full h-full blur-2xl absolute bg-black"></motion.div>
         </nav>
     )
 }
