@@ -63,7 +63,7 @@ export default function NavBar() {
                 className="w-full h-full text-white gap-8 flex justify-center items-center"
             >
                 {links.map((link, index) => (
-                    <Link className="flex justify-center relative" href={link.ref} key={index} scroll={true}>
+                    <Link className="flex justify-center relative" href={link.ref} key={index}>
                         <motion.h1 
                         className="transition-all pb-2 cursor-pointer relative"
                         whileHover={{ 

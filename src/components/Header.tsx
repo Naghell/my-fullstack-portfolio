@@ -65,7 +65,7 @@ const Header = () => {
                     variants={floatVariantSmall}
                     animate="animate"
                 >
-                    <Image className="p-2 rounded-full" width={400} height={400} src='/profile/yo.jfif' alt="Renzo Luis Battaglino"/>
+                    <Image className="rounded-full" width={1280} height={1280} src='/profile/yo.png' alt="Renzo Luis Battaglino"/>
                 </motion.div>
                 <motion.div
                     className="z-30 absolute top-10 right-48 h-[280px] w-[280px] rounded-full bg-violet-500"
