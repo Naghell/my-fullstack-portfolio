@@ -61,22 +61,28 @@ const Header = () => {
             </div>
             <div className="flex relative justify-center items-center w-full h-full">
                 <motion.div
-                    className="z-40 flex overflow-hidden justify-center absolute right-52 -top-8 h-[200px] w-[200px] rounded-full bg-violet-300"
+                    className="z-40 flex overflow-hidden justify-center absolute right-40 -top-8 h-[200px] w-[200px] rounded-full bg-violet-300"
                     variants={floatVariantSmall}
                     animate="animate"
                 >
                     <Image className="rounded-full" width={1280} height={1280} src='/profile/yo.png' alt="Renzo Luis Battaglino"/>
                 </motion.div>
                 <motion.div
-                    className="z-30 absolute top-10 right-48 h-[280px] w-[280px] rounded-full bg-violet-500"
+                    className="z-30 flex flex-col justify-center items-center absolute top-10 right-56 h-[280px] w-[280px] rounded-full bg-violet-500"
                     variants={floatVariantMedium}
                     animate="animate"
-                />
+                >
+                    <h2 className="text-white font-bold text-6xl">+1</h2>
+                    <h3 className="text-white font-medium text-2xl">año de experiencia</h3>
+                </motion.div>
                 <motion.div
-                    className="z-20 absolute right-0 -top-14 h-[400px] w-[400px] rounded-full bg-violet-700"
+                    className="z-20 flex flex-col justify-center items-center absolute -right-8 -top-14 h-[400px] w-[400px] rounded-full bg-violet-700"
                     variants={floatVariant}
                     animate="animate"
-                />
+                >
+                    <h2 className="text-white font-bold text-6xl">+15</h2>
+                    <h3 className="text-white font-medium text-2xl">tecnologías</h3>
+                </motion.div>
             </div>
         </div>
     </section>
