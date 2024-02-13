@@ -46,15 +46,15 @@ const Header = () => {
                 <h2 className="font-medium text-xl text-pink">Desarrollador web Full Stack</h2>
                 <div className="text-white w-full flex justify-between gap-2 flex-wrap flex-grow-0">
                     <Link className="flex gap-2 items-center justify-center rounded-lg bg-violet-500 hover:bg-violet-700 transition px-4 py-2" target="_blank" href='https://github.com/naghell'>
-                        <Image width={20} height={20} src='/icons/github.svg' alt="Github"/>
+                        <Image width={20} height={20} src='/icons/github.svg' alt="Logo de Github"/>
                         <h2>GitHub</h2>
                     </Link>
                     <Link className="flex gap-2 items-center justify-center rounded-lg bg-violet-500 hover:bg-violet-700 transition px-4 py-2" target="_blank" href='https://www.linkedin.com/in/renzobxt/'>
-                        <Image width={22} height={22} src='/icons/linkedin.svg' alt="LinkedIn"/>
+                        <Image width={22} height={22} src='/icons/linkedin.svg' alt="Logo de LinkedIn"/>
                         <h2>LinkedIn</h2>
                     </Link>
                     <Link className="flex gap-2 items-center justify-center rounded-lg bg-violet-500 hover:bg-violet-700 transition px-4 py-2" target="_blank" href=''>
-                        <Image width={18} height={18} src='/icons/cv.svg' alt="CV"/>
+                        <Image width={18} height={18} src='/icons/cv.svg' alt="Ícono de un CV"/>
                         <h2>CV</h2>
                     </Link>
                 </div>
