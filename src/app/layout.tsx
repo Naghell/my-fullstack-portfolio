@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Renzo Luis Battaglino | Desarrollador Full Stack",
-  description: "Experto en programación de webs y servidores.",
+  description: "Desarrollador web full stack especializado en NextJS y TypeScript. Servicios freelance para frontend y backend.",
   keywords: 'NextJS, React, JavaScript, TypeScript, programador web, full stack, freelance, frontend, backend, Argentina',
   authors: {name: 'Renzo Luis Battaglino'}
 };
