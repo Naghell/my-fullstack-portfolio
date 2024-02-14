@@ -36,9 +36,9 @@ const About = () => {
     },
   };
   return (
-    <section id="about" className="h-full w-full flex justify-center py-16">
-      <div className="max-w-[1080px] w-full flex justify-center items-center gap-16">
-        <div className="flex relative justify-center items-center w-1/4 h-full">
+    <section id="about" className="h-full w-full flex justify-center p-4 lg:p-0">
+      <div className="max-w-[360px] lg:max-w-[1080px] w-full flex flex-col lg:flex-row justify-center items-center gap-16">
+        <div className="hidden lg:flex relative justify-center items-center w-1/4 h-full">
           <motion.div
             className="z-50 transition-all hover:-top-8 flex overflow-hidden justify-center items-center absolute -right-4 top-0 h-[120px] w-[120px] rounded-full bg-violet-300"
             variants={floatVariantSmall}
@@ -61,9 +61,9 @@ const About = () => {
           <h2 className="text-4xl p-8 font-medium text-white text-center">22 años</h2>
           </motion.div>
         </div>
-        <div className="flex flex-col gap-4 w-3/4">
+        <div className="flex flex-col gap-4 w-full lg:w-3/4">
           <h1 className="text-white font-bold text-4xl">Sobre mi</h1>
-          <p className="text-pink hover:text-2xl transition-all text-lg">
+          <p className="text-pink lg:hover:text-2xl transition-all text-lg">
             Desarrollador especializado en NextJS, con un enfoque en la creación
             de experiencias web dinámicas y eficientes. Como freelancer,
             disfruto transformando ideas en soluciones digitales innovadoras,
