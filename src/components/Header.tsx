@@ -39,10 +39,11 @@ const Header = () => {
     };
 
     return(
-    <section id="home" className="min-h-screen w-full flex justify-center items-center">
-        <div className="max-w-[1080px] w-full flex justify-between bg-">
+    <section id="home" className="p-4 2xl:p-0 min-h-screen w-full flex justify-center items-center">
+        <div className="max-w-[1080px] w-full flex lg:flex-row flex-col-reverse justify-between items-center lg:items-start">
+            <Image className="absolute bottom-0 mb-8 flex animate-bounce lg:hidden" src='/elements/slide.svg' width={20} height={20} alt="Deslizar"/>
             <div className="flex flex-col gap-4 w-full max-w-[360px]">
-                <h1 className="text-white font-bold text-6xl">Renzo Luis <br/>Battaglino</h1>
+                <h1 className="text-white font-bold text-5xl sm:text-6xl">Renzo Luis <br/>Battaglino</h1>
                 <h2 className="font-medium text-xl text-pink">Desarrollador web Full Stack</h2>
                 <div className="text-white w-full flex justify-between gap-2 flex-wrap flex-grow-0">
                     <Link className="flex gap-2 items-center justify-center rounded-lg bg-violet-500 hover:bg-violet-700 transition px-4 py-2" target="_blank" href='https://github.com/naghell'>
@@ -58,8 +59,8 @@ const Header = () => {
                         <h2>CV</h2>
                     </Link>
                 </div>
-            </div>
-            <div className="flex relative justify-center items-center w-full h-full">
+            idi</div>
+            <div className="hidden lg:flex relative justify-center items-center w-full h-full">
                 <motion.div
                     className="z-40 hover:z-50 transition-all flex overflow-hidden justify-center absolute right-40 -top-8 hover:-top-32 h-[200px] w-[200px] rounded-full bg-violet-300"
                     variants={floatVariantSmall}
@@ -82,6 +83,15 @@ const Header = () => {
                 >
                     <h2 className="text-white font-bold text-6xl">+15</h2>
                     <h3 className="text-white font-medium text-2xl">tecnologías</h3>
+                </motion.div>
+            </div>
+            <div className="lg:hidden flex justify-center w-full h-full">
+                <motion.div
+                    className="z-40 hover:z-50 transition-all flex overflow-hidden justify-center h-[200px] w-[200px] mb-10 rounded-full bg-violet-300"
+                    variants={floatVariantSmall}
+                    animate="animate"
+                >
+                    <Image className="rounded-full" width={1280} height={1280} src='/profile/yo.png' alt="Renzo Luis Battaglino"/>
                 </motion.div>
             </div>
         </div>

@@ -40,23 +40,25 @@ const About = () => {
       <div className="max-w-[1080px] w-full flex justify-center items-center gap-16">
         <div className="flex relative justify-center items-center w-1/4 h-full">
           <motion.div
-            className="z-50 flex overflow-hidden justify-center items-center absolute -right-4 top-0 h-[120px] w-[120px] rounded-full bg-violet-300"
+            className="z-50 transition-all hover:-top-8 flex overflow-hidden justify-center items-center absolute -right-4 top-0 h-[120px] w-[120px] rounded-full bg-violet-300"
             variants={floatVariantSmall}
             animate="animate"
           >
             <h2 className="text-6xl text-violet-900 animate-pulse rotate-45">?</h2>
           </motion.div>
           <motion.div
-            className="z-40 flex overflow-hidden justify-center items-center absolute h-[160px] w-[160px] right-0 rounded-full bg-violet-500"
+            className="z-40 transition-all hover:right-12 flex overflow-hidden justify-center items-center absolute h-[160px] w-[160px] right-0 rounded-full bg-violet-500"
             variants={floatVariantMedium}
             animate="animate"
           >
+          <h2 className="text-6xl text-white">🇦🇷</h2>
           </motion.div>
           <motion.div
-            className="z-20 flex overflow-hidden justify-center items-center absolute left-0 h-[200px] w-[200px] rounded-full bg-violet-900"
+            className="z-20 transition-all hover:-left-12 flex overflow-hidden justify-center items-center absolute left-0 h-[200px] w-[200px] rounded-full bg-violet-900"
             variants={floatVariant}
             animate="animate"
           >
+          <h2 className="text-4xl p-8 font-medium text-white text-center">22 años</h2>
           </motion.div>
         </div>
         <div className="flex flex-col gap-4 w-3/4">

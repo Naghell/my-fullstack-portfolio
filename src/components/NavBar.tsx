@@ -60,7 +60,7 @@ export default function NavBar() {
             <motion.div
                 initial={{ y: -100 }}
                 animate={{ y: isVisible ? 0 : -100 }}
-                className="z-50 w-full h-full text-white gap-8 flex justify-center items-center"
+                className="z-50 w-full h-full text-white gap-8 hidden md:flex justify-center items-center"
             >
                 {links.map((link, index) => (
                     <Link className="flex justify-center relative" href={link.ref} key={index}>
@@ -79,7 +79,7 @@ export default function NavBar() {
             </motion.div>
             <motion.div
                 initial={{ y: -100 }}
-                animate={{ y: isVisible ? 0 : -100 }} className="z-40 -top-8 w-full h-full blur-2xl absolute bg-black"></motion.div>
+                animate={{ y: isVisible ? 0 : -100 }} className="z-40 -top-8 w-full h-full blur-2xl hidden md:absolute bg-black"></motion.div>
         </nav>
     )
 }
