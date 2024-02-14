@@ -54,7 +54,7 @@ const Header = () => {
                         <Image width={22} height={22} src='/icons/linkedin.svg' alt="Logo de LinkedIn"/>
                         <h2>LinkedIn</h2>
                     </Link>
-                    <Link className="flex gap-2 items-center justify-center rounded-lg bg-violet-500 hover:bg-violet-700 transition px-4 py-2" target="_blank" href=''>
+                    <Link className="flex gap-2 items-center justify-center rounded-lg bg-violet-500 hover:bg-violet-700 transition px-4 py-2" target="_blank" href='mailto:renzo@naghell.com'>
                         <Image width={18} height={18} src='/icons/cv.svg' alt="Ícono de un CV"/>
                         <h2>CV</h2>
                     </Link>
