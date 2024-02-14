@@ -84,10 +84,14 @@ export default function NavBar() {
                         </motion.h1>
                     </Link>
                 ))}
+                
             </motion.div>
+            <motion.div
+                initial={{ y: -100 }}
+                animate={{ y: isVisible ? 0 : -100 }} className="z-40 -top-8 w-full h-full absolute blur-2xl bg-violet-500 opacity-25"></motion.div>
 
             <motion.button 
-                className="sm:hidden z-50 right-0 absolute mr-4 " 
+                className="lg:hidden z-50 right-0 absolute mr-4 " 
                 onClick={toggleMenu}
                 whileTap={{ scale: 0.9 }}
             >
