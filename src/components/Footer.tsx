@@ -1,4 +1,6 @@
+import { email, githubUrl, linkedinUrl } from "@/config/variables";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,8 +13,8 @@ const Footer = () => {
         modificarlo.
       </p>
       <div className="flex space-x-4 mt-4">
-        <a
-          href="https://github.com/naghell"
+        <Link
+          href={githubUrl}
           aria-label="GitHub"
           target="_blank"
           rel="noopener noreferrer"
@@ -23,9 +25,9 @@ const Footer = () => {
             src="/icons/github.svg"
             alt="Logo de Github"
           />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/renzobxt"
+        </Link>
+        <Link
+          href={linkedinUrl}
           aria-label="LinkedIn"
           target="_blank"
           rel="noopener noreferrer"
@@ -36,15 +38,15 @@ const Footer = () => {
             src="/icons/linkedin.svg"
             alt="Logo de LinkedIn"
           />
-        </a>
-        <a href="mailto:renzo@naghell.com" aria-label="Email">
+        </Link>
+        <Link href={`mailto:${email}`} aria-label="Email">
           <Image
             width={22}
             height={22}
             src="/icons/email.svg"
             alt="Enviar email"
           />
-        </a>
+        </Link>
       </div>
     </footer>
   );
