@@ -78,7 +78,7 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex relative justify-center items-center w-full h-full">
           <motion.div
-            className="z-50 transition-all flex overflow-hidden justify-center absolute right-40 -top-8 hover:-top-32 h-[200px] w-[200px] rounded-full bg-violet-300"
+            className="z-40 transition-all flex overflow-hidden justify-center absolute right-40 -top-8 hover:-top-32 h-[200px] w-[200px] rounded-full bg-violet-300"
             variants={floatVariantSmall}
             animate="animate"
           >
@@ -113,7 +113,7 @@ const Header = () => {
         </div>
         <div className="lg:hidden flex justify-center w-full h-full">
           <motion.div
-            className="z-50 transition-all flex overflow-hidden justify-center h-[200px] w-[200px] mb-10 rounded-full bg-violet-300"
+            className="z-40 transition-all flex overflow-hidden justify-center h-[200px] w-[200px] mb-10 rounded-full bg-violet-300"
             variants={floatVariantSmall}
             animate="animate"
           >

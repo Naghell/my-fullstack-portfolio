@@ -8,14 +8,18 @@ export const technologies: number = 15;
 interface Link {
   name: string;
   ref: string;
+  target: boolean;
 }
 
 export const links: Array<Link> = [
-  { name: "Inicio", ref: "#home" },
-  { name: "Sobre mi", ref: "#about" },
-  { name: "Experiencia", ref: "#experience" },
-  { name: "Proyectos", ref: "#projects" },
-  { name: "Contacto", ref: "#contact" },
+  { name: "Inicio", ref: "#home", target: false },
+  { name: "Sobre mi", ref: "#about", target: false },
+  { name: "Experiencia", ref: "#experience", target: false },
+  {
+    name: "Contacto",
+    ref: "https://www.linkedin.com/in/renzobxt",
+    target: true,
+  },
 ];
 
 //About
@@ -36,6 +40,8 @@ interface Experience {
   company: string;
   role: string;
   duration: string;
+  logo: string;
+  url: string;
   description: string[];
 }
 
@@ -44,6 +50,8 @@ export const experiences: Array<Experience> = [
     company: "Edison",
     role: "Desarrollador Full Stack",
     duration: "Agosto 2023 - Presente",
+    logo: "/experience/edison.png",
+    url: "https://somosedison.com",
     description: [
       "Desarrollé aplicaciones web utilizando Vite y Next.js.",
       "Implementé APIs RESTful y servicios backend con Express y NestJS.",

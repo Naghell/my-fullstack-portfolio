@@ -41,6 +41,11 @@ export default function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const getTarget = (target: boolean): "_blank" | "_self" => {
+    console.log(target);
+    return target ? "_blank" : "_self";
+  };
+
   const menuVariants = {
     opened: {
       opacity: 1,
@@ -64,7 +69,7 @@ export default function NavBar() {
         className="z-50 w-full h-full text-white gap-8 hidden sm:flex justify-center items-center"
       >
         {links.map((link, index) => (
-          <Link href={link.ref} key={index}>
+          <Link href={link.ref} target={getTarget(link.target)} key={index}>
             <motion.h1
               className="transition-all pb-2 cursor-pointer relative"
               whileHover={{
@@ -81,7 +86,7 @@ export default function NavBar() {
       <motion.div
         initial={{ y: -100 }}
         animate={{ y: isVisible ? 0 : -100 }}
-        className="z-40 -top-8 w-full h-full absolute blur-2xl bg-violet-500 opacity-25"
+        className="z-40 -top-8 w-full h-full absolute blur-2xl bg-violet-500 opacity-50"
       ></motion.div>
 
       <motion.button
@@ -109,7 +114,7 @@ export default function NavBar() {
             <ul className="flex flex-col p-4">
               {links.map((link, index) => (
                 <li key={index} className="my-2">
-                  <Link href={link.ref}>
+                  <Link href={link.ref} target={getTarget(link.target)}>
                     <h1
                       className="text-white text-right text-lg font-medium"
                       onClick={() => setIsMenuOpen(false)}
