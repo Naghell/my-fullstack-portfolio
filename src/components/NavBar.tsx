@@ -42,7 +42,6 @@ export default function NavBar() {
   };
 
   const getTarget = (target: boolean): "_blank" | "_self" => {
-    console.log(target);
     return target ? "_blank" : "_self";
   };
 
